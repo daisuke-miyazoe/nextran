@@ -10,7 +10,7 @@ export default function Home() {
         </p>
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 space-y-4">
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            フロントエンドが正常に動作しています！
+            フロントエンドが正常に動作しています！!!!!!!!!
           </p>
           <div className="flex gap-4 justify-center">
             <div className="px-4 py-2 bg-blue-500 text-white rounded-md font-semibold">
