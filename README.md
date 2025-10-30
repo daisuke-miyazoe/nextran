@@ -46,6 +46,7 @@ pnpm dev:backend   # Express.js (http://localhost:3001)
 - Next.js 14 (App Router)
 - React 18
 - TypeScript
+- Tailwind CSS
 
 ### Backend
 - Express.js
@@ -54,6 +55,16 @@ pnpm dev:backend   # Express.js (http://localhost:3001)
 
 ## API エンドポイント
 
-- `GET /` - ルートエンドポイント
-- `GET /api/health` - ヘルスチェック
-- `GET /api/hello` - サンプルエンドポイント
+バックエンドのAPIは以下の2つの方法でアクセスできます：
+
+### 直接バックエンドにアクセス
+- `http://localhost:3001/` - ルートエンドポイント
+- `http://localhost:3001/api/health` - ヘルスチェック
+- `http://localhost:3001/api/hello` - サンプルエンドポイント
+
+### フロントエンド経由でアクセス（推奨）
+Next.jsのリライト機能により、フロントエンドからも同じAPIにアクセスできます：
+- `http://localhost:3000/api/health` - ヘルスチェック
+- `http://localhost:3000/api/hello` - サンプルエンドポイント
+
+フロントエンドから `/api/*` にアクセスすると、自動的にバックエンド (`http://localhost:3001/api/*`) にプロキシされます。これにより、CORS問題を回避し、シームレスなAPI統合が可能になります。
