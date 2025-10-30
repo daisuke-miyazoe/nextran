@@ -1,0 +1,24 @@
+### ensure table
+POST http://localhost:3001/api/users/ensure-table
+
+### create
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "email": "b@ex.com",
+  "password": "p@ss",
+  "name": "Bob"
+}
+
+### list
+GET http://localhost:3001/api/users
+
+### update
+PATCH http://localhost:3001/api/users/1
+Content-Type: application/json
+
+{ "name": "Bob Updated" }
+
+### delete
+DELETE http://localhost:3001/api/users/1
