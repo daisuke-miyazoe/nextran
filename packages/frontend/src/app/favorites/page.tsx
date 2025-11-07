@@ -35,7 +35,7 @@ const FavoritesPage = () => {
       <main className="flex-1">
         <div className="max-w-2xl mx-auto px-6 py-10">
           {/* タイトル */}
-          <h1 className="text-2xl font-semibold mb-6">駅一覧</h1>
+          <h1 className="text-2xl font-semibold mb-6">お気に入り駅一覧</h1>
 
           {/* 検索バー */}
           <div className="mb-8 max-w-2xl">

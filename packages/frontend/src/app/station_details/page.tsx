@@ -1,4 +1,7 @@
+"use client"
+
 import React from "react";
+import { useRouter } from 'next/navigation';
 
 const lines = ["山手線", "埼京線", "湘南新宿ライン", "東武東上線", "西武池袋線"];
 
@@ -30,13 +33,18 @@ const timetable = [
 ];
 
 const StationDetailsPage = () => {
+  const router = useRouter();
+  const handleNavigation = () => {
+    router.push('/favorites')
+  }
+
   return (
     <div>
       {/* メイン */}
       <main className="flex-1">
         <div className="max-w-5xl mx-auto px-6 py-8">
           {/* 戻るリンク */}
-          <button className="mb-4 flex items-center gap-1 text-xs text-slate-500 hover:text-slate-700">
+          <button onClick={handleNavigation} className="mb-4 flex items-center gap-1 text-xs text-slate-500 hover:text-slate-700">
             <svg
               className="w-3.5 h-3.5"
               viewBox="0 0 24 24"
