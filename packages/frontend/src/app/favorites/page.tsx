@@ -28,7 +28,7 @@ const stations = [
   }
 ];
 
-const SearchPage = () => {
+const FavoritesPage = () => {
   return (
     <div>
         {/* メイン */}
@@ -117,4 +117,4 @@ const SearchPage = () => {
   )
 }
 
-export default SearchPage;
+export default FavoritesPage;
