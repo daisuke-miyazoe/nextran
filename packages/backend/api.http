@@ -1,24 +1,45 @@
-### ensure table
-POST http://localhost:3001/api/users/ensure-table
-
 ### create
 POST http://localhost:3001/api/users
 Content-Type: application/json
 
 {
-  "email": "b@ex.com",
-  "password": "p@ss",
-  "name": "Bob"
+  "email": "konnidchiwa4@ddedddddssx.com",
+  "password": "pssss@ssxs",
+  "name": "Boab"
 }
 
 ### list
 GET http://localhost:3001/api/users
 
+### list
+GET http://localhost:3001/api/favorite_station
+
 ### update
 PATCH http://localhost:3001/api/users/1
 Content-Type: application/json
 
-{ "name": "Bob Updated" }
+{ "name": "Bob Updatesssd" }
 
 ### delete
 DELETE http://localhost:3001/api/users/1
+
+
+### create
+POST http://localhost:3001/api/favorite_station
+Content-Type: application/json
+
+{
+  "id": 2,
+  "station_code": ["bbb"]
+}
+
+### list
+GET http://localhost:3001/api/favorite_station
+
+### create
+POST http://localhost:3001/api/favorite_station/4
+Content-Type: application/json
+
+{
+  "station_code": "aaasbwww"
+}
