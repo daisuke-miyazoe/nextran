@@ -1,0 +1,1 @@
+export const getUserTable = 'select id, email, user_name, created_at from users order by id desc limit 200'
